@@ -2,7 +2,7 @@
 
 DuckDbGeo
 
-As DuckDB added an spatial extension its become a google way to interact with any vector data that gdal can read/write.
+As DuckDB added an spatial extension its become a good way to interact with any vector data that gdal can read/write.
 
 This project is a simple UI to load and query spatial data, with a application/web interface.
 
