@@ -35,7 +35,6 @@ Alpine.data('map', () => ({
 
       for (var i = 0, f; f = files[i]; i++) {
           console.log(f);
-
       }
   }
 }));
