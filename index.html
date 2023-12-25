@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ddg</title>
+</head>
+<body class="h-full bg-slate-400">
+<div x-data="map" class="h-full">
+    <div id="map" class="w-full top-0 bottom-[400px] !absolute"></div>
+    <div class="absolute w-full bottom-0 h-[400px]">
+        <div>
+            <textarea class="min-w-[800px] h-[200px]" x-ref="query" x-model="query" id="query" autocomplete="off"></textarea>
+            <button class="w-12" @click="runQuery()">RUN</button>
+        </div>
+        <div class="min-w-max h-[100px]" x-text="results"></div>
+        <input type="file" @change="handleFileSelect" multiple>
+    </div>
+</div>
+
+<script src="./src/main.ts" type="module"></script>
+</body>
+</html>
